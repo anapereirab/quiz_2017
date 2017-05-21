@@ -13,11 +13,19 @@ router.get('/author', function(req, res, next) {
     res.render('author');
 });
 
+var sessionController = require('../controllers/session_controller');
 
+//-----------------------------------------------------------
+// autologout
+router.all('*',sessionController.deleteExpiredUserSession);
 
 // Autoload de rutas que usen :quizId
 router.param('quizId', quizController.load);
 
+// Definición de rutas de sesion
+router.get('/session',    sessionController.new);     // formulario login
+router.post('/session',   sessionController.create);  // crear sesión
+router.delete('/session', sessionController.destroy); // destruir sesión
 
 // Definición de rutas de /quizzes
 router.get('/quizzes',                     quizController.index);
