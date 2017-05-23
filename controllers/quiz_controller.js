@@ -298,6 +298,8 @@ exports.checkRandom = function (req, res, next) {
 
     if(result){
         acertadas++;
+    }else{ 
+	acertadas=0;
     }
     if (quiz) {
         res.render('quizzes/random_result', {
