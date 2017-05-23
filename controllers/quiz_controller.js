@@ -283,6 +283,7 @@ exports.random = function (req, res, next) {
     });
 };
         
+
 // GET /quizzes/:quizId/check
 exports.checkRandom = function (req, res, next) {
     console.log("Entra en check");
