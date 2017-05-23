@@ -305,7 +305,7 @@ exports.checkRandom = function (req, res, next) {
             answer: answer,
             score: acertadas
         });
-
+	acertadas=0;
     } else {
         next(new Error('No existe ningún quiz con id=' + quizId));
     }
