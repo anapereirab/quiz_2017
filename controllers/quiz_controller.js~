@@ -3,6 +3,8 @@ var Sequelize = require('sequelize');
 
 var paginate = require('../helpers/paginate').paginate;
 
+
+
 // Autoload el quiz asociado a :quizId
 exports.load = function (req, res, next, quizId) {
 
