@@ -31,6 +31,7 @@ exports.deleteExpiredUserSession = function(req, res, next) {
 };
 
 
+
 // Middleware: Se requiere hacer login.
 //
 // Si el usuario ya hizo login anteriormente entonces existira
@@ -92,7 +93,6 @@ exports.adminAndNotMyselfRequired = function(req, res, next){
         console.log('Ruta prohibida: es el usuario logeado o no es administrador.');
         res.send(403);    }
 };
-
 
 /*
  * Autenticar un usuario: Comprueba si el usuario esta registrado en users

@@ -170,7 +170,10 @@ exports.destroy = function (req, res, next) {
         }
 
         req.flash('success', 'Usuario eliminado con éxito.');
+
         res.redirect('/goback');
+        //res.redirect('/');
+
     })
     .catch(function (error) {
         next(error);
