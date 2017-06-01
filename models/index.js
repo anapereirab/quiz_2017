@@ -13,8 +13,8 @@ var url, storage;
 
 if (!process.env.DATABASE_URL) {
 	console.log("No hay process.env");
-    url = "sqlite:///";
-    //url = "postgres://rlgdvzqrbqvrno:a77a3bcc10f25aa67d424cf223d633b5c02176443b4637a9abb87d5d0955ecf0@ec2-54-225-118-55.compute-1.amazonaws.com:5432/dfm4k7kj9635mn"
+    //url = "sqlite:///";
+    url = "postgres://wlijjmjssjrltf:75df800bae30df77d2df835bba85b17b97436b38dbe23a3fe6122b9fca57057c@ec2-50-19-218-160.compute-1.amazonaws.com:5432/d8d8ntlr3hivr8"
     storage = "quiz.sqlite";
     console.log("url: "+url);
 } else {
