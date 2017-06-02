@@ -22,7 +22,7 @@
     "express-flash": "0.0.2",
     "express-partials": "^0.3.0",
     "express-session": "~1.15.1",
-    "method-override": "^2.3.7",
+    "method-override": "~2.3.7",
     "morgan": "~1.7.0",
     "pg": "~6.1.5",
     "pg-hstore": "~2.3.2",
